@@ -1,0 +1,3 @@
+rootProject.name = 'JavaLabTasks'
+include 'RangeTests'
+
