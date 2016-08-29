@@ -10,7 +10,7 @@ import lab.model.Country;
 
 public class HelloWorldTest {
 
-	protected static final String APPLICATION_CONTEXT_XML_FILE_NAME = "resources/application-context.xml";
+	protected static final String APPLICATION_CONTEXT_XML_FILE_NAME = "src/main/resources/application-context.xml";
 
 	private UsualPerson expectedPerson;
 
