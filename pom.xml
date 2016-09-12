@@ -24,6 +24,7 @@
     <modules>
         <module>RangeTests</module>
         <module>Lab3</module>
+        <module>Lab7</module>
     </modules>
 
     <dependencies>
