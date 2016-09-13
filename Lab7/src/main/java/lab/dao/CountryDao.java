@@ -7,10 +7,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 public interface CountryDao {
 
-	public abstract void save(Country country);
+	void save(Country country);
 
-	public abstract List<Country> getAllCountries();
+	List<Country> getAllCountries();
 
-	public abstract Country getCountryByName(String name);
+	Country getCountryByName(String name);
 
 }
