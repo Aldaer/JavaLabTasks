@@ -19,28 +19,18 @@ import javax.persistence.Table;
 @NoArgsConstructor
 public class Country implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @Column(name = "NAME")
     private String name;
+
+    @Column(name = "CODE_NAME")
     private String codeName;
 
     public Country(String name, String codeName) {
         this.name = name;
         this.codeName = codeName;
-    }
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public int getId() {
-        return id;
-    }
-
-    @Column(name = "NAME")
-    public String getName() {
-        return name;
-    }
-
-    @Column(name = "CODE_NAME")
-    public String getCodeName() {
-        return codeName;
     }
 }
