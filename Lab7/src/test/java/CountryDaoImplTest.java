@@ -7,6 +7,7 @@ import lab.model.Country;
 
 //import org.apache.commons.logging.Log;
 //import org.apache.commons.logging.LogFactory;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +36,19 @@ public class CountryDaoImplTest {
 		List<Country> countryList = countryDao.getAllCountries();
 		assertEquals(1, countryList.size());
 		assertEquals(exampleCountry, countryList.get(0));
+
+//---
+        countryDao.save(new Country("Canada", "CA"));
+
+        countryList = countryDao.getAllCountries();
+        assertEquals(2, countryList.size());
+
+        Country country = countryDao.getCountryByName("Australia");
+        assertEquals(exampleCountry, country);
 	}
 
 	@Test
+    @Ignore
 	public void testGtAllCountries() {
 
 		countryDao.save(new Country("Canada", "CA"));
@@ -47,8 +58,8 @@ public class CountryDaoImplTest {
 	}
 
 	@Test
+    @Ignore
 	public void testGetCountryByName() {
-
 		Country country = countryDao.getCountryByName("Australia");
 		assertEquals(exampleCountry, country);
 	}
