@@ -12,10 +12,10 @@
     <artifactId>Lab9</artifactId>
 
     <properties>
-        <org.springframework.version>LATEST</org.springframework.version>
+        <org.springframework.version>RELEASE</org.springframework.version>
     </properties>
 
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>

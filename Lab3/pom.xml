@@ -11,7 +11,7 @@
     <artifactId>Lab3</artifactId>
 
     <properties>
-        <org.springframework.version>4.0.0.RELEASE</org.springframework.version>
+        <org.springframework.version>RELEASE</org.springframework.version>
     </properties>
 
     <packaging>jar</packaging>
